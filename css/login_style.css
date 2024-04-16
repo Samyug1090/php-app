@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #f5f2ea;
+}
+
+.loginform {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    padding: 2rem;
+    align-items: center;
+    text-align: center;
+    background: white;
+    border-radius: 20px;
+    filter: drop-shadow(10px, 10px, 20px, #000);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-title {
+    font-weight: 900;
+    font-size: 22px;
+}
+
+.form-desc {
+    font-weight: 500;
+    font-size: 15px;
+    margin: .75rem 0 2rem 0;
+}
+
+.form-control-plaintext {
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    padding: .75rem 1rem;
+    font-size: 14px;
+    font-weight: 500;
+    color: gray;
+    margin-bottom: 1rem;
+}
+
+.form-control-plaintext::placeholder {
+    color: gray;
+}
+
+.login-button {
+    margin: 1.5rem 0;
+    border: 1px solid #fdc886;
+    background: #fdc886;
+    color: black;
+    border-radius: 10px;
+    padding: .5rem;
+    font-weight: bold;
+    transition: all .3s ease-in;
+}
+
+.login-button:hover,
+.login-button:focus {
+    border-radius: 0;
+    background-color: #fdc886;
+    border-color: #fdc886;
+    color: rgba(0, 0, 0, 0.75);
+    letter-spacing: 2px;
+}
+
+.option-signin {
+    position: relative;
+    font-size: 15px;
+}
+
+
+
+.input-box {
+    position: relative;
+}
+
+.input-box i {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-100%, -80%);
+}
+
+.input-box i:hover {
+    cursor: pointer;
+}
+
+@keyframes error {
+    0% {
+        rotate: 0deg;
+    }
+
+    25% {
+        rotate: 1deg;
+    }
+
+    50% {
+        rotate: -1deg;
+    }
+
+    100% {
+        rotate: 0deg;
+    }
+}
+
